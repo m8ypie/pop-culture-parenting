@@ -5,11 +5,10 @@
 <style>
   header {
     display: flex;
-    flex-direction: row;
     flex-grow: 1;
+    flex-direction: row;
     align-items: center;
-    height:120px;
-    overflow: hidden;
+    height:90px;
     background: url("../assets/Grid.svg"),linear-gradient(180deg, #F8A533 0%, #ED7195 81%, #EC7097 82.5%, #EA65AC 100%);
     background-size: cover;
     padding-left: 72px;

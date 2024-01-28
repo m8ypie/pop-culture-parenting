@@ -1,5 +1,4 @@
 <script>
-  import "../fonts.css"
   import Banner from "$lib/Banner.svelte"
   import '@fontsource/audiowide';
 </script>

@@ -1,0 +1,41 @@
+p {
+  color: white;
+  font-family: Cairo;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 36px */
+  text-wrap: wrap;
+}
+
+.sub-text {
+  font-size: 20px;
+}
+
+h3 {
+  color: var(--white, #fff);
+
+  /* episode name number */
+  font-family: Audiowide;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 30px */
+}
+
+.main {
+  display: flex;
+  flex-flow: column;
+  /* height: 100%; */
+  flex-grow: 1;
+}
+
+button {
+  color: var(--white, #fff);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Cairo;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 30px */
+}

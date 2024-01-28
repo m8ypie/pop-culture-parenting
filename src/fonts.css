@@ -1,4 +1,3 @@
-@font-face {
+html * {
   font-family: Audiowide;
-  src: url("https://fonts.googleapis.com/css?family=Audiowide");
 }
