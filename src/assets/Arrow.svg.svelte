@@ -2,6 +2,6 @@
   export let direction:"up" |"down" | "right" | "left"
   const rotationMap = new Map([["up", 180],["down", 0], ["left", 270],["right", 90]])
 </script>
-<svg transform={`rotate(${rotationMap.get(direction)})`} xmlns="http://www.w3.org/2000/svg" width="17" height="9" viewBox="0 0 17 9"   fill="none">
-<path  d="M16 1.56359L8.5 7.0332L1 1.56359" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<svg transform={`rotate(${rotationMap.get(direction)})`} xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
+<path id="sort arrow" d="M7.29289 13.7071C7.68342 14.0976 8.31658 14.0976 8.70711 13.7071L15.0711 7.34315C15.4616 6.95262 15.4616 6.31946 15.0711 5.92893C14.6805 5.53841 14.0474 5.53841 13.6569 5.92893L8 11.5858L2.34315 5.92893C1.95262 5.53841 1.31946 5.53841 0.928932 5.92893C0.538408 6.31946 0.538408 6.95262 0.928932 7.34315L7.29289 13.7071ZM7 0L7 13H9V0L7 0Z" fill="white"/>
 </svg>

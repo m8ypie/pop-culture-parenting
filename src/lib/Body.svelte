@@ -6,11 +6,11 @@
 
 <style>
   .body{
-    background: #373744;
     display: flex;
     flex-direction: row;
     padding-top: 12px;
-    height: 100%;
+    /* padding-bottom: 12px; */
+    max-height: 900px;
   }
   h1{
     font-size: 90px;
@@ -26,12 +26,21 @@
     border: 3px solid var(--white, #FFF);
     flex-grow: 1;
     width: 62%;
-    /* height: 100%; */
-    overflow-y: scroll;
+    overflow-y:scroll
   }
   .filler {
     width:38%;
     overflow: hidden;
+  }
+
+  .content::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .content {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
   }
 </style>
 

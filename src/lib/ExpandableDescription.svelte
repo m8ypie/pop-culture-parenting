@@ -6,7 +6,7 @@
 </style>
 
 <script lang="ts">
-  import Arrow from "../assets/Arrow.svg.svelte";
+  import Collapse from "../assets/Collapse.svg.svelte";
 
   export let description:string
   let expanded = false
@@ -16,6 +16,6 @@
 </script>
 
 <div>
-  <p class="sub-text" style={`display:${expanded ? "default" : "none"};`}>{description}</p>
-  <button on:click={onExpand} class=".sub-text"> <Arrow direction={expanded ? "up" : "down"}/> {`${expanded ? "hide" : "show"}`} description</button>
+  <p class="sub-text" style={`display:${expanded ? "inherit" : "none"};`}>{description}</p>
+  <button on:click={onExpand} class=".sub-text"> <Collapse direction={expanded ? "up" : "down"}/> {`${expanded ? "hide" : "show"}`} description</button>
 </div>

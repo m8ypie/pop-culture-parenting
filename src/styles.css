@@ -23,11 +23,32 @@ h3 {
   line-height: 150%; /* 30px */
 }
 
+footer {
+  background: #ea65ac;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 45px;
+  height: 50px;
+}
+
+header {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  align-items: center;
+  height: 90px;
+  background: url("./assets/Grid.svg"), linear-gradient(180deg, #f8a533 0%, #ed7195 81%, #ec7097 82.5%, #ea65ac 100%);
+  background-size: cover;
+  padding-left: 72px;
+  padding-right: 72px;
+}
+
 .main {
   display: flex;
   flex-flow: column;
-  /* height: 100%; */
-  flex-grow: 1;
+  height: 100%;
+  padding-bottom: 12px;
+  background: #373744;
 }
 
 button {

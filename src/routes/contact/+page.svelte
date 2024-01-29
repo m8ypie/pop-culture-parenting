@@ -1,6 +1,7 @@
 <script lang="ts">
   import Banner from "$lib/Banner.svelte"
   import Body from "$lib/Body.svelte"
+  import Footer from "$lib/Footer.svelte";
   import Bois from "../../assets/Bois.svg.svelte"
   import Email from "../../assets/Email.svg.svelte";
 </script>
@@ -17,16 +18,18 @@
   }
 
 </style>
-
-<div class="main">
+<div>
   <Banner/>
-  <Body title={"contact"}>
-    <Bois slot="filler"/>
-    <div slot="content">
-      <p>Please feel free to contact us with any topics for shows, questions about episodes or any media enquiries.</p>
-      <div style="display: flex;">
-        <Email/><div style="align-items: center;"><a href="mailto:PopCultureParenting@gmail.com">PopCultureParenting@gmail.com</a></div>
+  <div class="main">
+    <Body title={"contact"}>
+      <Bois slot="filler"/>
+      <div slot="content">
+        <p>Please feel free to contact us with any topics for shows, questions about episodes or any media enquiries.</p>
+        <div style="display: flex;">
+          <Email/><div style="align-items: center;"><a href="mailto:PopCultureParenting@gmail.com">PopCultureParenting@gmail.com</a></div>
+        </div>
       </div>
-    </div>
-  </Body>
+    </Body>
+  </div>
+<Footer/>
 </div>
