@@ -1,13 +1,11 @@
 <script lang="ts">
-  import Banner from "$lib/Banner.svelte"
-  import Body from "$lib/Body.svelte"
+  import ContentPage from "$lib/ContentPage.svelte";
   import Logo from "../../assets/Logo.svg.svelte"
 </script>
 
-<div class="main">
-  <Banner/>
-  <Body title={"movies"}>
-    <Logo slot="filler"/>
-    <p slot="content">Movies</p>
-  </Body>
-</div>
+
+<ContentPage pageName="movies">
+  <Logo slot="filler"/>
+  <p slot="content">Movies</p>
+</ContentPage>
+
