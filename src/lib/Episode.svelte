@@ -31,9 +31,9 @@
   <div class="episode-content">
     <h3>{episode.episodeName}</h3>
     <div class="sites">
-      <ImageLink link="www.google.com"><Spotify slot="image"/></ImageLink>
-      <ImageLink link="www.google.com"><GooglePodcasts slot="image"/></ImageLink>
-      <ImageLink link="www.google.com"><ApplePodcasts slot="image"/></ImageLink>
+      <ImageLink link={episode.spotify}><Spotify slot="image"/></ImageLink>
+      <ImageLink link={episode.google}><GooglePodcasts slot="image"/></ImageLink>
+      <ImageLink link={episode.apple}><ApplePodcasts slot="image"/></ImageLink>
     </div>
     <ExpandableDescription description={episode.description}/>
   </div>

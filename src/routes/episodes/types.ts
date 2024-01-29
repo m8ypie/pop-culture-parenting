@@ -167,9 +167,9 @@ export interface Podcast {
   episodeName: string;
   description: string;
   thumbnail: string;
-  // spotify: string;
-  // apple: string;
-  // google: string;
+  spotify: string;
+  apple: string;
+  google: string;
   // simpleCast: string;
 }
 

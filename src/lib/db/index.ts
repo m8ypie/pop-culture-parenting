@@ -1,5 +1,6 @@
 import { Db, MongoClient, ServerApiVersion } from "mongodb";
-const uri = "mongodb+srv://m8ypie:<password>@pcp.wlsiehi.mongodb.net/?retryWrites=true&w=majority";
+import type { Podcast } from "../../routes/episodes/types";
+const uri = "mongodb+srv://m8ypie:SY6yWvD6KSpd14YH@pcp.wlsiehi.mongodb.net/?retryWrites=true&w=majority";
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri);
 let db: Db;
@@ -13,13 +14,8 @@ export const connect = async () => {
   }
 };
 
-interface Podcast {
-  episodeNumber: number;
-  episodeName: string;
-  description: string;
-  thumbnail: string;
-  spotify: string;
-  apple: string;
-  google: string;
-  simpleCast: string;
-}
+export const saveEpisode = async (podcast: Podcast) => {
+  await db
+    .collection("podcasts")
+    .findOneAndUpdate({ episodeNumber: podcast.episodeNumber }, { $set: { ...podcast } }, { upsert: true });
+};

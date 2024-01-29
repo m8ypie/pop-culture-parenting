@@ -19,6 +19,7 @@
     line-height: 100%; /* 90px */
     color: white;
     margin-left: 71px;
+    margin-bottom: 10px;
   }
   .content {
     padding: 16px 40px;
