@@ -13,7 +13,7 @@ export async function load({ params }): Promise<PodcastList> {
   const simpleCastFeed = (await parser.parseStringPromise(await res.text())) as SimpleCastFeed;
   // fs.writeFileSync("re.json", JSON.stringify(json));
 
-  return {
+  const result = {
     podcasts: simpleCastFeed.rss.channel.flatMap((channel) =>
       channel.item.map((item) => ({
         episodeNumber: Number(item["itunes:episode"] || [][0]),
@@ -29,4 +29,7 @@ export async function load({ params }): Promise<PodcastList> {
       }))
     )
   };
+
+  // await collator(result);
+  return result;
 }

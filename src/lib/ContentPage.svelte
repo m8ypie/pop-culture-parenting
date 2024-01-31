@@ -7,13 +7,13 @@
 
 
 
-<div>
+
+<div class="main">
   <Banner/>
-  <div class="main">
-    <Body title={pageName}>
-      <slot slot="filler" name="filler"/>
-      <slot slot="content" name="content"/>
-    </Body>
-  </div>
+  <Body title={pageName}>
+    <slot slot="filler" name="filler"/>
+    <slot slot="content" name="content"/>
+  </Body>
   <Footer/>
 </div>
+

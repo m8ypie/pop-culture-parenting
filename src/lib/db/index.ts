@@ -19,3 +19,11 @@ export const saveEpisode = async (podcast: Podcast) => {
     .collection("podcasts")
     .findOneAndUpdate({ episodeNumber: podcast.episodeNumber }, { $set: { ...podcast } }, { upsert: true });
 };
+
+export const getEpisodeList = async (ascending = false) => {
+  return await db
+    .collection<Podcast>("podcasts")
+    .find()
+    .sort(ascending ? -1 : 1)
+    .toArray();
+};

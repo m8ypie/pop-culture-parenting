@@ -20,7 +20,9 @@
 <ContentPage pageName="episodes">
   <Logo slot="filler"/>
   <div slot="content">
-    <div style="width: 100%; display:flex; flex-direction:row-reverse"><Sort on:changeOrder descending={descending}/></div>
+  <div style="width: 100%; display:flex; flex-direction:row-reverse">
+    <Sort on:changeOrder descending={descending}/>
+  </div>
     <div style="gap:35px; display:flex; flex-direction:column">
       {#each data.podcasts as episode }
         <Episode episode={episode}/>

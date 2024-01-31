@@ -7,10 +7,7 @@
 <style>
   .body{
     display: flex;
-    flex-direction: row;
-    padding-top: 12px;
-    /* padding-bottom: 12px; */
-    max-height: 900px;
+    height: calc(100% - 140px)
   }
   h1{
     font-size: 90px;
@@ -39,19 +36,16 @@
   }
 
   /* Hide scrollbar for IE, Edge and Firefox */
-  .content {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-  }
+
 </style>
 
 
 <div class="body">
-  <div class="filler">
-    <h1 >{title}</h1>
-    <slot name="filler"/>
-  </div>
-  <div class="content">
-    <slot name="content"/>
-  </div>
+    <div class="filler">
+      <h1 >{title}</h1>
+      <slot name="filler"/>
+    </div>
+    <div class="content">
+      <slot name="content"/>
+    </div>
 </div>

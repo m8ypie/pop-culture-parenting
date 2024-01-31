@@ -5,7 +5,7 @@
     justify-content: flex-end;
     align-items: center;
     gap: 45px;
-    height: 50px;
+    min-height: 50px;
   }
 </style>
 
