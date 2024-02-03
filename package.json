@@ -22,9 +22,11 @@
 	"type": "module",
 	"dependencies": {
 		"@fontsource/audiowide": "^5.0.18",
+		"@types/string_score": "^0.1.31",
 		"@types/xml2js": "^0.4.14",
 		"mongodb": "^6.3.0",
 		"simple-xml-to-json": "^1.1.7",
+		"string_score": "^0.1.22",
 		"xml2js": "^0.6.2"
 	}
 }
