@@ -6,7 +6,7 @@
 </style>
 
 <script lang="ts">
-  import Collapse from "../assets/Collapse.svg.svelte";
+  import Collapse from "../../assets/Collapse.svg.svelte";
 
   export let description:string
   let expanded = false

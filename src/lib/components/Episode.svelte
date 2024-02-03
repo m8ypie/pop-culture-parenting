@@ -16,12 +16,11 @@
 </style>
 
 <script lang="ts">
-  import type { Podcast } from "../routes/episodes/types";
   import Thumbnail from "./Thumbnail.svelte";
   import ImageLink from "./ImageLink.svelte";
-  import Spotify from "../assets/Spotify.svg.svelte";
-  import ApplePodcasts from "../assets/ApplePodcasts.svg.svelte";
-  import GooglePodcasts from "../assets/GooglePodcasts.svg.svelte";
+  import Spotify from "../../assets/Spotify.svg.svelte";
+  import ApplePodcasts from "../../assets/ApplePodcasts.svg.svelte";
+  import GooglePodcasts from "../../assets/GooglePodcasts.svg.svelte";
   import ExpandableDescription from "./ExpandableDescription.svelte";
   export let episode:Podcast
 </script>

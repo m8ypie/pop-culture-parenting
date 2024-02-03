@@ -1,9 +1,8 @@
 <script lang="ts">
-  import ContentPage from "$lib/ContentPage.svelte";
-  import Episode from "$lib/Episode.svelte";
-  import Sort from "$lib/Sort.svelte";
+  import ContentPage from "$lib/components/ContentPage.svelte";
+  import Episode from "$lib/components/Episode.svelte";
+  import Sort from "$lib/components/Sort.svelte";
   import Logo from "../../assets/Logo.svg.svelte"
-  import type { PodcastList } from "./types";
 
   export let data:PodcastList
   console.log(data)

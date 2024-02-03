@@ -1,7 +1,7 @@
 <script lang="ts">
-  import Banner from "$lib/Banner.svelte"
-  import Body from "$lib/Body.svelte"
-  import Footer from "$lib/Footer.svelte";
+  import Banner from "$lib/components/Banner.svelte"
+  import Body from "$lib/components/Body.svelte"
+  import Footer from "$lib/components/Footer.svelte";
   export let pageName:string
 </script>
 

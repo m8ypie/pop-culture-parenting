@@ -1,8 +1,5 @@
 // import re from "simple-xml-to-json";
-import type { Podcast, PodcastList, SimpleCastFeed, Test } from "./types";
 import xml2js from "xml2js";
-import fs from "fs";
-import collator from "../../lambda/collator";
 
 var parser = new xml2js.Parser(/* options */);
 
@@ -11,7 +8,26 @@ export async function load({ params }): Promise<PodcastList> {
   const res = await fetch("https://feeds.simplecast.com/_7lcF_6g");
 
   const simpleCastFeed = (await parser.parseStringPromise(await res.text())) as SimpleCastFeed;
-  // fs.writeFileSync("re.json", JSON.stringify(json));
+  // fs.writeFileSync(
+  //   "re2.json",
+  //   JSON.stringify([
+  //     ...new Set(
+  //       simpleCastFeed.rss.channel
+  //         .flatMap((channel) => {
+  //           return channel.item.map((item, i) => {
+  //             // if (i % 2 === 0) {
+  //             //              return (item.title[0].split(" + ")[0] || item.title[0].split(" & ")[0].split(": ")[1])?.split(", (")[0];
+  //             return (item.title[0].split(" + ")[0] || item.title[0].split(" & ")[0])
+  //               .split(": ")[1]
+  //               ?.split(", (")[0]
+  //               ?.split("(")[0];
+  //             // }
+  //           });
+  //         })
+  //         .filter((item) => item)
+  //     )
+  //   ])
+  // );
 
   const result = {
     podcasts: simpleCastFeed.rss.channel.flatMap((channel) =>

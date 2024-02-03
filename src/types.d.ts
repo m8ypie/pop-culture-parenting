@@ -1,17 +1,17 @@
-export interface Test {
+interface Test {
   hi: string;
 }
 
-export interface SimpleCastFeed {
+interface SimpleCastFeed {
   rss: RSS;
 }
 
-export interface RSS {
+interface RSS {
   $: RSSClass;
   channel: Channel[];
 }
 
-export interface RSSClass {
+interface RSSClass {
   version: string;
   "xmlns:atom": string;
   "xmlns:content": string;
@@ -21,7 +21,7 @@ export interface RSSClass {
   "xmlns:podcast": string;
 }
 
-export interface Channel {
+interface Channel {
   "atom:link": AtomLinkElement[];
   generator: string[];
   title: string[];
@@ -43,11 +43,11 @@ export interface Channel {
   item: Item[];
 }
 
-export interface AtomLinkElement {
+interface AtomLinkElement {
   $: AtomLink;
 }
 
-export interface AtomLink {
+interface AtomLink {
   href: string;
   rel: string;
   title?: string;
@@ -55,13 +55,13 @@ export interface AtomLink {
   xmlns?: string;
 }
 
-export interface Image {
+interface Image {
   link: string[];
   title: string[];
   url: string[];
 }
 
-export interface Item {
+interface Item {
   guid: GUIDElement[];
   title: string[];
   description: string[];
@@ -82,7 +82,7 @@ export interface Item {
   "content:encoded"?: string[];
 }
 
-export enum Author {
+enum Author {
   AuthorGarveyBillyGmailCOMDRBillyGarveyNickMcCormack = "garvey.billy@gmail.com (Dr Billy garvey, Nick McCormack)",
   AuthorGarveyBillyGmailCOMDRBillyGarveyNickMccormack = "garvey.billy@gmail.com (Dr Billy garvey, Nick mccormack)",
   AuthorGarveyBillyGmailCOMNickMcCormackDRBillyGarvey = "garvey.billy@gmail.com (Nick McCormack, Dr Billy garvey)",
@@ -93,30 +93,30 @@ export enum Author {
   GarveyBillyGmailCOMNickMcCormackDRBillyGarvey = "garvey.billy@gmail.com (Nick McCormack, Dr Billy Garvey)"
 }
 
-export interface EnclosureElement {
+interface EnclosureElement {
   $: Enclosure;
 }
 
-export interface Enclosure {
+interface Enclosure {
   length: string;
   type: Type;
   url: string;
 }
 
-export enum Type {
+enum Type {
   AudioMPEG = "audio/mpeg"
 }
 
-export interface GUIDElement {
+interface GUIDElement {
   _: string;
   $: GUID;
 }
 
-export interface GUID {
+interface GUID {
   isPermaLink: string;
 }
 
-export enum Itunes {
+enum Itunes {
   BillyGarvey = "Billy Garvey",
   DRBillyGarvey = "Dr Billy Garvey",
   DRBillyGarveyNickMcCormack = "Dr Billy Garvey, Nick McCormack",
@@ -127,42 +127,42 @@ export enum Itunes {
   NickMcCormackDRBillyGarvey = "Nick McCormack, Dr Billy Garvey"
 }
 
-export enum ItunesEpisodeType {
+enum ItunesEpisodeType {
   Full = "full",
   Trailer = "trailer"
 }
 
-export enum ItunesExplicit {
+enum ItunesExplicit {
   No = "no"
 }
 
-export interface ItunesImageElement {
+interface ItunesImageElement {
   $: ItunesImage;
 }
 
-export interface ItunesImage {
+interface ItunesImage {
   href: string;
 }
 
-export interface ChannelItunesCategory {
+interface ChannelItunesCategory {
   $: ItunesCategory;
   "itunes:category": ItunesCategoryItunesCategory[];
 }
 
-export interface ItunesCategory {
+interface ItunesCategory {
   text: string;
 }
 
-export interface ItunesCategoryItunesCategory {
+interface ItunesCategoryItunesCategory {
   $: ItunesCategory;
 }
 
-export interface ItunesOwner {
+interface ItunesOwner {
   "itunes:name": Itunes[];
   "itunes:email": string[];
 }
 
-export interface Podcast {
+interface Podcast {
   episodeNumber: number;
   episodeName: string;
   description: string;
@@ -173,4 +173,4 @@ export interface Podcast {
   // simpleCast: string;
 }
 
-export type PodcastList = { podcasts: Podcast[] };
+type PodcastList = { podcasts: Podcast[] };

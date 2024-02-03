@@ -6,7 +6,7 @@
 </style>
 
 <script lang="ts">
-  import Arrow from "../assets/Arrow.svg.svelte";
+  import Arrow from "../../assets/Arrow.svg.svelte";
 
   export let descending:boolean
 </script>

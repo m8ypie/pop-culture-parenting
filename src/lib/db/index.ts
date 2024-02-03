@@ -1,6 +1,6 @@
 import { Db, MongoClient, ServerApiVersion } from "mongodb";
-import type { Podcast } from "../../routes/episodes/types";
-const uri = "mongodb+srv://m8ypie:SY6yWvD6KSpd14YH@pcp.wlsiehi.mongodb.net/?retryWrites=true&w=majority";
+import { DB_CONNECTION_URI } from "$env/static/private";
+const uri = DB_CONNECTION_URI;
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri);
 let db: Db;

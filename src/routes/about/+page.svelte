@@ -1,5 +1,5 @@
 <script lang="ts">
-  import ContentPage from "$lib/ContentPage.svelte";
+  import ContentPage from "$lib/components/ContentPage.svelte";
   import Bois from "../../assets/Bois.svg.svelte"
 </script>
 
