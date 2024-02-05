@@ -26,6 +26,8 @@
     width: 62%;
     overflow: auto;
     display: grid;
+    margin-top: 12px;
+    margin-bottom: 12px;
   }
   .content {
     overflow-y:scroll;
