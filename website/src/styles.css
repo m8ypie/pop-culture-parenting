@@ -53,7 +53,6 @@ header {
 button {
   color: var(--white, #fff);
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Cairo;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -62,6 +61,5 @@ button {
 
 .content {
   overflow-y: scroll;
-  border: solid 4px red;
   flex-grow: 1;
 }

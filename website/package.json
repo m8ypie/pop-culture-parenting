@@ -1,33 +1,32 @@
 {
-	"name": "pop-culture-parenting",
-	"version": "0.0.1",
-	"private": true,
-	"scripts": {
-		"dev": "vite dev",
-		"build": "vite build",
-		"preview": "vite preview",
-		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
-	},
-	"devDependencies": {
-		"@sveltejs/adapter-auto": "^3.0.0",
-		"@sveltejs/kit": "^2.0.0",
-		"@sveltejs/vite-plugin-svelte": "^3.0.0",
-		"svelte": "^4.2.7",
-		"svelte-check": "^3.6.0",
-		"svelte-kit-sst": "^2.40.1",
-		"tslib": "^2.4.1",
-		"typescript": "^5.0.0",
-		"vite": "^5.0.3"
-	},
-	"type": "module",
-	"dependencies": {
-		"@fontsource/audiowide": "^5.0.18",
-		"@types/string_score": "^0.1.31",
-		"@types/xml2js": "^0.4.14",
-		"mongodb": "^6.3.0",
-		"simple-xml-to-json": "^1.1.7",
-		"string_score": "^0.1.22",
-		"xml2js": "^0.6.2"
-	}
+  "name": "pop-culture-parenting",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "^3.0.0",
+    "@sveltejs/kit": "^2.0.0",
+    "@sveltejs/vite-plugin-svelte": "^3.0.0",
+    "svelte": "^4.2.7",
+    "svelte-check": "^3.6.0",
+    "svelte-kit-sst": "^2.40.1",
+    "tslib": "^2.4.1",
+    "typescript": "^5.0.0",
+    "vite": "^5.0.3"
+  },
+  "type": "module",
+  "dependencies": {
+    "@fontsource/audiowide": "^5.0.18",
+    "@types/string_score": "^0.1.31",
+    "@types/xml2js": "^0.4.14",
+    "simple-xml-to-json": "^1.1.7",
+    "string_score": "^0.1.22",
+    "xml2js": "^0.6.2"
+  }
 }

@@ -12,6 +12,7 @@
   <Banner/>
   <Body title={pageName}>
     <slot slot="filler" name="filler"/>
+    <slot slot="content-header" name="content-header"/>
     <slot slot="content" name="content"/>
   </Body>
   <Footer/>

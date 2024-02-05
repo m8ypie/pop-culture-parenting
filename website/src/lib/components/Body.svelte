@@ -18,19 +18,27 @@
     margin-left: 71px;
     margin-bottom: 10px;
   }
-  .content {
-    padding: 16px 40px;
+  .content-wrapper {
+    padding: 20px;
     border-radius: 21px;
     border: 3px solid var(--white, #FFF);
     flex-grow: 1;
     width: 62%;
-    overflow-y:scroll
+    overflow: auto;
+    display: grid;
+  }
+  .content {
+    overflow-y:scroll;
+    flex-grow: 1;
   }
   .filler {
     width:38%;
     overflow: hidden;
   }
 
+  .content-wrapper::-webkit-scrollbar {
+    display: none;
+  }
   .content::-webkit-scrollbar {
     display: none;
   }
@@ -45,7 +53,10 @@
       <h1 >{title}</h1>
       <slot name="filler"/>
     </div>
-    <div class="content">
-      <slot name="content"/>
+    <div class="content-wrapper">
+      <slot name="content-header"/>
+      <div class="content">
+        <slot name="content"/>
+      </div>
     </div>
 </div>
