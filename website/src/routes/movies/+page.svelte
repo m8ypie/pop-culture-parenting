@@ -2,7 +2,7 @@
   import ContentPage from "$lib/components/ContentPage.svelte";
   import AlphabetSelector from "$lib/components/AlphabetSelector.svelte";
   import Episode from "$lib/components/Episode.svelte";
-  import ExpandableElement from "$lib/components/ExpandableElement.svelte"
+  import ExpandableElement from "$lib/components/TitleSeparator.svelte"
   import Logo from "../../assets/Logo.svg.svelte"
   import podcastByMovies from "../../assets/podcastByMovies.json"
   const {populatedCharacters, podcastsByMovies} = podcastByMovies
