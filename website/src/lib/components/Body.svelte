@@ -32,6 +32,7 @@
   .content {
     overflow-y:scroll;
     flex-grow: 1;
+    scroll-behavior: smooth;
   }
   .filler {
     width:38%;
@@ -57,7 +58,7 @@
     </div>
     <div class="content-wrapper">
       <slot name="content-header"/>
-      <div class="content">
+      <div id="content" class="content">
         <slot name="content"/>
       </div>
     </div>

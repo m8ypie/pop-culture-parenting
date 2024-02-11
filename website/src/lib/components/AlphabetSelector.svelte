@@ -12,7 +12,7 @@
     flex-grow: 1;
   }
 
-   button {
+   a {
     color: white;
     font-size: 24px;
     font-weight: 400;
@@ -21,11 +21,18 @@
     text-align: center;
     background-color: transparent;
     border: none;
+    text-decoration: none;
   }
 
-  button:disabled {
+  a.disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+  a.disabled {
     color: rgba(255, 255, 255, 0.50);
     cursor:default;
+    text-decoration: none;
   }
 
   .selected {
@@ -81,11 +88,11 @@
   function onCharacterSelected(character:typeof alphabetElements[number]){
     selected = character
   }
-</script>
+  </script>
 <div class="alphabetSelector">
   <ol>
     {#each alphabetElements as character}
-      <li ><button disabled={!selectableCharacters.includes(character)} on:click={() => onCharacterSelected(character)} class={character === selected ? "selected" : ""}>{character.toUpperCase()}</button></li>
+      <li ><a on:click={() => onCharacterSelected(character)} href={`#${character === "&123" ? "." : character}`} class={character === selected ? "selected" : !selectableCharacters.includes(character === "&123" ? "." : character) ? "disabled" : ""}>{character.toUpperCase()}</a></li>
     {/each}
   </ol>
 </div>

@@ -2,6 +2,7 @@
   button{
     background-color: transparent;
     border: none;
+    font-family: Cairo;
   }
 </style>
 

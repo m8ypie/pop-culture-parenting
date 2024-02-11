@@ -17,6 +17,8 @@
       <div style="display: flex; flex-direction:column; padding-top:30px">
         <div style="gap:35px; display:flex; flex-direction:column;">
           {#each movieLists as movieList}
+            <!-- svelte-ignore a11y-missing-content -->
+            <a name={movieList[0]}></a> 
             {#each movieList[1] as movie}
               <ExpandableElement title={movie.movieTitle}>
                 <div slot="content">

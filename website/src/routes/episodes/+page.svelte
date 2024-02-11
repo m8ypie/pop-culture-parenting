@@ -5,7 +5,7 @@
   import Logo from "../../assets/Logo.svg.svelte"
   import podcastList from "../../assets/podcasts.json"
 
-  let descending = false
+  let descending = true
   let podcasts = podcastList.podcasts
 
   function changeOrder() {

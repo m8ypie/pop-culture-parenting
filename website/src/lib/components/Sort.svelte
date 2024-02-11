@@ -2,6 +2,8 @@
   button{
     background-color: transparent;
     border: none;
+    cursor: pointer;
+    font-family: Cairo;
   }
 </style>
 
@@ -12,5 +14,5 @@
 </script>
 
 <div>
-  <button on:click class=".sub-text"> sort <Arrow direction={descending ? "up" : "down"}/></button>
+  <button on:click class=".sub-text"> {`sort ${descending ? "newest": "oldest"}` } <Arrow direction="down"/></button>
 </div>
