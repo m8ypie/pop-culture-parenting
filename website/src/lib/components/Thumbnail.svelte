@@ -1,5 +1,7 @@
 <style>
   img {
+    min-width: 100px;
+    min-height: 100px;
     width: 100px;
     height: 100px;
     border: 1px solid var(--white, #FFF);
