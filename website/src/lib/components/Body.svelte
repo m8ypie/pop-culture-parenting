@@ -58,7 +58,7 @@
     }
 
     h1 {
-      font-size: 60px;
+      font-size: 30px;
       margin-left: 20px;
       margin-bottom: 17px;
       margin-top: 17px;
