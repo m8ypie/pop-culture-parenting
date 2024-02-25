@@ -3,6 +3,7 @@
     font-size: 24px;
     color: white;
     cursor: pointer;
+    text-decoration: none;
   }
 </style>
 
