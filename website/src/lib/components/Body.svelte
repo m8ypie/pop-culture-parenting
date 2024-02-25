@@ -9,6 +9,8 @@
     display: flex;
     height: calc(100% - 140px)
   }
+
+
   h1{
     font-size: 90px;
     font-style: normal;
@@ -46,6 +48,45 @@
     display: none;
   }
 
+  .filler-vertical {
+    display: none;
+  }
+  @media only screen and (max-width: 600px) {
+    .body {
+      height:100%;
+      flex-direction: column;
+    }
+
+    h1 {
+      font-size: 60px;
+      margin-left: 20px;
+      margin-bottom: 17px;
+      margin-top: 17px;
+      width: 100%;
+    }
+
+    .filler {
+      width:100%;
+    }
+
+    .content-wrapper {
+      width: inherit;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+
+    .filler-vertical {
+      display: inherit;
+      overflow: hidden;
+    }
+
+
+    .filler-horizontal {
+      display: none;
+    }
+  }
+  
+
   /* Hide scrollbar for IE, Edge and Firefox */
 
 </style>
@@ -54,12 +95,17 @@
 <div class="body">
     <div class="filler">
       <h1 >{title}</h1>
-      <slot name="filler"/>
+      <div class="filler-horizontal">
+        <slot name="filler"/>
+      </div>
     </div>
     <div class="content-wrapper">
       <slot name="content-header"/>
       <div id="content" class="content">
         <slot name="content"/>
       </div>
+    </div>
+    <div class="filler-vertical">
+      <slot name="filler"/>
     </div>
 </div>

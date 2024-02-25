@@ -9,30 +9,45 @@
   const movieLists = Object.entries(podcastsByMovies)
 </script>
 
+<style>
+
+  .content {
+    display: flex;
+    flex-direction:column;
+    padding-top:30px;
+    gap:35px;
+  }
+  @media only screen and (max-width: 600px) {
+    .content-header {
+      display: none;
+    }
+  }
+</style>
+
 
 <ContentPage pageName="movies">
   <Logo slot="filler"/>
-  <AlphabetSelector slot="content-header" selectableCharacters={populatedCharacters}/>
-    <div slot="content">
-      <div style="display: flex; flex-direction:column; padding-top:30px">
-        <div style="gap:35px; display:flex; flex-direction:column;">
-          {#each movieLists as movieList}
-            <!-- svelte-ignore a11y-missing-content -->
-            <a name={movieList[0]}></a> 
-            {#each movieList[1] as movie}
-              <ExpandableElement title={movie.movieTitle}>
-                <div slot="content">
-                  {#each movie.podcasts as podcast}
-                  <div style="margin-bottom: 12px;">
-                    <Episode episode={podcast}/>
-                  </div>
-                  {/each}
-                </div>
-              </ExpandableElement>
-            {/each}
-          {/each}
-        </div>
-      </div>
+  <div slot="content-header" class="content-header">
+    <AlphabetSelector  selectableCharacters={populatedCharacters}/>
+  </div>
+  <div slot="content">
+    <div class="content-headet">
+      {#each movieLists as movieList}
+        <!-- svelte-ignore a11y-missing-content -->
+        <a name={movieList[0]}></a> 
+        {#each movieList[1] as movie}
+          <ExpandableElement title={movie.movieTitle}>
+            <div slot="content">
+              {#each movie.podcasts as podcast}
+              <div style="margin-bottom: 12px;">
+                <Episode episode={podcast}/>
+              </div>
+              {/each}
+            </div>
+          </ExpandableElement>
+        {/each}
+      {/each}
     </div>
+  </div>
 </ContentPage>
 

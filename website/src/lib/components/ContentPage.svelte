@@ -5,14 +5,11 @@
   export let pageName:string
 </script>
 
-
-
-
 <div class="main">
   <Banner/>
   <Body title={pageName}>
     <slot slot="filler" name="filler"/>
-    <slot slot="content-header" name="content-header"/>
+    <slot class="content-header" slot="content-header" name="content-header"/>
     <slot slot="content" name="content"/>
   </Body>
   <Footer/>

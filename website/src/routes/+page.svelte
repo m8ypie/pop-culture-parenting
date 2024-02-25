@@ -6,7 +6,7 @@
 </script>
 
 
-<ContentPage pageName="Welcome">
+<ContentPage pageName="welcome">
   <Bois slot="filler"/>
   <p slot="content">Pop Culture Parenting is hosted by Nick (a developing parent) and Dr Billy Garvey (a developmental pediatrician). 
   <br/><br/>Our goal is to open a conversation about how we can better support our kids in their developmental and mental health. We use scenes from iconic 80’s + 90’s movies to bring the theory and advice to life!
