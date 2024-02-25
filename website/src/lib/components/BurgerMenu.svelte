@@ -11,6 +11,7 @@
     list-style-type: none;
     padding: 0px;
     width: 220px;
+    z-index: 10;
   }
   li {
     border-top: 1px solid white;
