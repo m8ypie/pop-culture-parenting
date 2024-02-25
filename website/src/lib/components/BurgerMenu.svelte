@@ -27,6 +27,7 @@
     color: white;
     text-decoration: none;
     font-family: Audiowide;
+    display: block
   }
 </style>
 
