@@ -14,6 +14,12 @@
     display: flex;
     gap: 45px;
   }
+
+  @media only screen and (max-width: 600px) {
+    .socials {
+      gap: 20px;
+    }
+  }
 </style>
 
 <div class="socials">

@@ -11,6 +11,15 @@
     min-height: 50px;
     padding-right: 24px;
   }
+
+  @media only screen and (max-width: 600px) {
+
+    footer {
+      padding-right: 0px;
+      justify-content: center;
+    }
+
+  }
 </style>
 
 <footer>
