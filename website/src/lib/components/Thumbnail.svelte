@@ -6,7 +6,7 @@
     height: 100px;
     border: 1px solid var(--white, #FFF);
     opacity: 0;
-		transition: all 5s ease;
+		transition: all 2s ease;
   }
 </style>
 
