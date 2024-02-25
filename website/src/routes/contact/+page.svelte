@@ -15,6 +15,12 @@
     text-align: center;
   }
 
+  @media only screen and (max-width: 600px) {
+    a {
+      font-size: 20px;
+    }
+  }
+
 </style>
 <ContentPage pageName="contact">
   <Bois slot="filler"/>
