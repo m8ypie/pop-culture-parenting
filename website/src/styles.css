@@ -90,4 +90,8 @@ body {
   .main {
     padding-bottom: 0px;
   }
+  header {
+    padding-right: 0px;
+    padding-left: 20px;
+  }
 }
