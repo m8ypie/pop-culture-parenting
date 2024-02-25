@@ -9,6 +9,7 @@
     color: white;
     font-size: 40px;
     flex-grow: 1;
+    font-weight: 400;
   }
 
   .burger-menu {
